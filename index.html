@@ -7,7 +7,38 @@
     <title>News World</title>
 </head>
 <body>
-    <div class="news"></div>
+    <div class="header">
+        <h1>Notícias do Mundo</h1>
+        <h2>Encontre Manchetes por País e Categoria</h2>
+    </div>
+    <div class="selection">
+        <select name="country" id="country">
+            <option value="au">Australia</option>
+            <option value="br" >Brasil</option>
+            <option value="ca">Canada</option>
+            <option value="es">Espanha</option>
+            <option value="gb">Reino Unido</option>
+            <option value="it">Italia</option>
+            <option value="pt">Portugal</option>
+        </select>
+        <br>
+        <br>
+        <select name="category" id="category">
+            <option value="science">Ciência</option>
+            <option value="entertainment">Entretenimento</option>
+            <option value="sports">Esportes</option>
+            <option value="general">Geral</option>
+            <option value="business">Negócios</option>
+            <option value="health">Saúde</option>
+            <option value="technology">Tecnologia</option> 
+        </select>
+        <br>
+        <br>
+        <button id="search">Pesquisar</button>
+    </div>
+    <div class="news">
+        <!--Dinamic Content Here-->
+    </div>
     <script src="app.js"></script>
 </body>
 </html>
