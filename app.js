@@ -22,7 +22,6 @@ function selectCountryCategory(){
         arrayNews.map((el) => {
             var template = `<h3 class="author">Titulo: ${el.title}</h3>
                         <p class="title"><b>Autor:<b> ${el.author}</p>
-                        <p>Data de publicação: ${el.publishedAt}</p>
                         <a class="url" href=${el.url} target="_blank">Saiba Mais</a>
                         <br>
                         <br>
