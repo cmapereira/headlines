@@ -20,8 +20,8 @@ function selectCountryCategory(){
         arrayNews = data.articles
         console.log(arrayNews)
         arrayNews.map((el) => {
-            if(el.author == null){
-                el.author = 'indefinido'
+            if(el.author == null || el.author ==''){
+                el.author = 'Indefinido...'
             }
             template = `<br>
                         <h3 class="title">Titulo: ${el.title}</h3>
