@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-color: white;
+}
+
+.header{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid white;
+    box-shadow: 2px 2px 5px gray;
+    background-color:rgb(83, 83, 234);
+    color: white;
+}
+
+.selection{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:rgb(122, 173, 219);
+    border-bottom: 1px solid white;
+    box-shadow: 2px 2px 5px gray;
+}
+
+.selection select{
+    width: 300px;
+    height: 40px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px gray;
+}
+
+.selection button{
+    width: 250px;
+    height: 40px;
+    border: none;
+    background-color:rgb(243, 119, 4);
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 50px;
+    box-shadow: 2px 2px 5px gray;
+    letter-spacing: 1px;
+}
+
+.news{
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 10px;
+    color:rgb(53, 55, 55)
+}
+
+.title{
+    color:rgb(31, 57, 59)
+}
+
+.author{
+    color:rgb(119, 123, 123);
+    font-size: 14px;
+}
+
+.url{
+    color: white;
+    text-decoration: none;
+}
+
+.link{
+    width: 100px;
+    height: 40px;
+    background-color: rgb(79, 153, 227);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    box-shadow: 2px 2px 5px gray;
+    cursor: pointer;
+}

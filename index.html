@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>News World</title>
 </head>
 <body>
     <div class="header">
         <h1>Notícias do Mundo</h1>
-        <h2>Encontre Manchetes por País e Categoria</h2>
+        <br>
+        <h3>Encontre Manchetes por País e Categoria</h3>
     </div>
     <div class="selection">
         <select name="country" id="country">
             <option value="au">Australia</option>
-            <option value="br" >Brasil</option>
+            <option value="br" selected >Brasil</option>
             <option value="ca">Canada</option>
             <option value="es">Espanha</option>
             <option value="gb">Reino Unido</option>
@@ -27,7 +29,7 @@
             <option value="science">Ciência</option>
             <option value="entertainment">Entretenimento</option>
             <option value="sports">Esportes</option>
-            <option value="general">Geral</option>
+            <option value="general" selected >Geral</option>
             <option value="business">Negócios</option>
             <option value="health">Saúde</option>
             <option value="technology">Tecnologia</option> 
@@ -36,6 +38,7 @@
         <br>
         <button id="search">Pesquisar</button>
     </div>
+    
     <div class="news">
         <!--Dinamic Content Here-->
     </div>

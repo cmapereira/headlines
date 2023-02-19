@@ -3,9 +3,11 @@ var search = document.querySelector('#search');
 var div = document.querySelector('.news');
 var selectCountry = document.querySelector('#country');
 var selectCategory = document.querySelector('#category');
-
+var arrayNews = [];
+var template = '';
 
 function selectCountryCategory(){
+    var arrayNews = [];
     var country = selectCountry.options[selectCountry.selectedIndex].value
     var category = selectCategory.options[selectCategory.selectedIndex].value
     console.log(country, category)
@@ -20,9 +22,15 @@ function selectCountryCategory(){
         arrayNews = data.articles
         console.log(arrayNews)
         arrayNews.map((el) => {
-            var template = `<h3 class="author">Titulo: ${el.title}</h3>
-                        <p class="title"><b>Autor:<b> ${el.author}</p>
-                        <a class="url" href=${el.url} target="_blank">Saiba Mais</a>
+            if(el.author == null){
+                el.author = 'indefinido'
+            }
+            template = `<br>
+                        <h3 class="title">Titulo: ${el.title}</h3>
+                        <br>
+                        <p class="author"><b>Autor:<b> ${el.author}</p>
+                        <br>
+                        <a class="url" href=${el.url} target="_blank"><button class="link">Saiba Mais</button></a>
                         <br>
                         <br>
                         <hr> 
@@ -33,7 +41,12 @@ function selectCountryCategory(){
     
 };
 
+function cleardiv(){
+    div.innerHTML = ``;
+}
+
 search.addEventListener("click", () => {
+    cleardiv();
     selectCountryCategory();
 });
 
